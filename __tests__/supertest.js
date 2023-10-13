@@ -41,7 +41,6 @@ describe('Route Integration', () => {
     let actualPoints;
 
     beforeAll(async () => {
-      // Perform setup actions here
       const res = await request(app).post('/receipts/process').send(receipt3);
       id = res.body.id;
       actualPoints = addPoints(receipt3);

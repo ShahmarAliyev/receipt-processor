@@ -10,15 +10,14 @@ In order to start the application first open your terminal and use the following
 git clone https://github.com/ShahmarAliyev/receipt-processor.git
 ```
 
-Once you have the repository on your machine, go to the directory of that repo.  
-
+Once you have the repository on your machine, go to the directory of that repo.
 
 ## Usage
 
-In order to spin up the express API use the following command 
+In order to spin up the express API use the following command
 
 ```bash
-docker build . -t shahmar/node-web-app 
+docker build . -t shahmar/node-web-app
 ```
 
 This command is gonna run the tests and build the image.

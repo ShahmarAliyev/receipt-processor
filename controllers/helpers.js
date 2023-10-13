@@ -35,16 +35,11 @@ const addPoints = (receipt) => {
 };
 
 function generateID(receiptData) {
-  // Convert receipt data to a JSON string
   const receiptJSON = JSON.stringify(receiptData);
 
-  // Use a stable hash function (e.g., SHA-256) to generate a fixed-length hash
-  // In this example, we'll use a simple hash function for demonstration purposes
   const hash = receiptJSON
     .split('')
     .reduce((acc, char) => (acc * 31 + char.charCodeAt(0)) & 0xffffffff, 0);
-
-  // Format the hash as a UUID
   return [
     hash >>> 0, // Ensure it's a positive integer
     hash >>> 0, // Duplicate for the same reason
