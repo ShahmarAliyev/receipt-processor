@@ -12,6 +12,10 @@ Once you have the repository on your machine, go to the directory of that repo.
 
 ## Usage
 
+```bash
+pip install foobar
+```
+
 In order to spin up the express API use the following command.
 
 docker build . -t shahmar/node-web-app 
