@@ -23,7 +23,7 @@ docker build . -t shahmar/node-web-app
 
 This command is gonna run the tests and build the image.
 
-In order to run the application run the following command and the application is gonna start at [http://localhost:5500/] (http://localhost:5500/)
+In order to run the application run the following command and the application is gonna start at [http://localhost:5500/](http://localhost:5500/)
 
 ```bash
 docker run -p 5500:5500 -d shahmar/node-web-app
